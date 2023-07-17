@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Source+Sans+3:wght@300&family=Work+Sans:wght@600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Source+Sans+3:wght@300&display=swap');
 
 
 body{
@@ -24,4 +23,11 @@ ul li span{
 .anchor a{
     font-weight: 300;
     font-size: smaller;
+}
+.describe{
+    font-family: 'Work Sans', sans-serif !important;
+}
+.anchor{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

@@ -4,7 +4,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="pb-5 w-10/12 mx-auto">
+    <div className="pb-5 w-11/12 mx-auto">
       <div className="my-10  mx-2.5 px-4 ">
         <p className="text-xs">
           <span className="text-[#86c7e8]">‹</span> BACK TO TEMPLATES
