@@ -12,7 +12,7 @@ function Navbar() {
           width={160}
           height={40}
         />
-        <ul className="md:flex gap-4 hidden">
+        <ul className="md:flex hidden">
           <li className="flex ">
             Products
             <span>
@@ -50,16 +50,16 @@ function Navbar() {
           <li>Contact</li>
         </ul>
         <div className="flex">
-          <button>
-            <Image src={"search.svg"} alt="search" width={30} height={30} />
+          <button className="pr-2  ">
+            <Image src={"search.svg"} alt="search" width={25} height={25} />
           </button>
           <div className="hidden md:flex">
             <Button
-              className={`text-primaryBtn-500 hover:bg-primaryBtn-500 hover:text-white`}
+              className={`text-btn-primary hover:bg-btn-primary  hover:text-white`}
             >
               Login
             </Button>
-            <Button className={`bg-primaryBtn-500 text-white ml-2`}>
+            <Button className={`bg-btn-primary text-white ml-2`}>
               Start My Free Trial
             </Button>
           </div>
