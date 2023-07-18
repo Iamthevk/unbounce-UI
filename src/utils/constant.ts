@@ -1,4 +1,4 @@
-const benefits = [
+export const benefits = [
 
     {
         heading: "Benefit 1",
@@ -17,4 +17,5 @@ const benefits = [
     }
 
 ]
-export default benefits;
+
+export const APPOINTMENT_OPTIONS = ["Type 1", "Type 2", "Type 3"];
