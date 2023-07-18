@@ -4,10 +4,12 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="pb-5 w-11/12 mx-auto">
+    <div className="pb-5 w-11/12 mx-auto pt-24">
       <div className="my-10  mx-2.5 px-4 ">
         <p className="text-xs">
-          <span className="text-[#86c7e8]">‹</span> BACK TO TEMPLATES
+          <a href="https://unbounce.com/landing-page-templates/">
+            <span className="text-[#86c7e8]">‹</span> BACK TO TEMPLATES
+          </a>
         </p>
       </div>
       <div className="flex gap-3 justify-between  mx-2.5 px-4">
@@ -17,7 +19,7 @@ function Header() {
             Schedule more virtual appointments, online classes, and video
             consultations with this high-converting lead capture template.
           </p>
-          <Button className="text-white py-2.5 px-6 bg-btn-secondary border-none">
+          <Button className="text-white py-2.5 px-6 bg-btn-secondary hover:bg-[rgba(246,146,30,0.9)] border-none">
             MAKE IT YOURS
           </Button>
         </div>
@@ -31,7 +33,6 @@ function Header() {
               {" "}
               Agency Lead Generation
             </a>
-            {/* https://unbounce.com/landing-page-templates/consulting/ */}|
             <a
               href="https://unbounce.com/landing-page-templates/consulting/"
               target="_blank"

@@ -4,7 +4,7 @@ import Button from "@/ui_components/Button";
 
 function Navbar() {
   return (
-    <div className="border-b-2 w-full">
+    <div className="border-b-2 w-full fixed z-10 bg-white ">
       <div className="w-10/12 mx-auto flex justify-around items-center h-10 py-10 ">
         <Image
           src="https://unbounce.com/wp-content/themes/unbounce2019/assets/img/unbounce-icon-dark.svg"
@@ -59,7 +59,9 @@ function Navbar() {
             >
               Login
             </Button>
-            <Button className={`bg-btn-primary text-white ml-2`}>
+            <Button
+              className={`bg-btn-primary text-white ml-2 hover:bg-white hover:text-btn-primary`}
+            >
               Start My Free Trial
             </Button>
           </div>
