@@ -1,13 +1,8 @@
 "use client";
 import Input from "@/ui_components/Input";
-import React, {
-  ChangeEvent,
-  ChangeEventHandler,
-  FormEvent,
-  useState,
-} from "react";
+import React, { FormEvent, useState } from "react";
 import { APPOINTMENT_OPTIONS } from "@/utils/constant";
-import Button from "@/ui_components/Button";
+import { Button } from "@/ui_components";
 
 interface InputField {
   placeholder: string;

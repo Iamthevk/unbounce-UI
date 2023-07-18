@@ -1,10 +1,10 @@
-import Button from "@/ui_components/Button";
+import { Button } from "@/ui_components";
 import Image from "next/image";
 import React from "react";
 
 function Header() {
   return (
-    <div className="pb-5 w-11/12 mx-auto pt-24">
+    <header className="pb-5 w-11/12 mx-auto pt-24">
       <div className="my-10  mx-2.5 px-4 ">
         <p className="text-xs">
           <a href="https://unbounce.com/landing-page-templates/">
@@ -133,7 +133,7 @@ function Header() {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

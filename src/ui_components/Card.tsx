@@ -8,7 +8,7 @@ interface ICardProps {
   location: string;
 }
 
-export const TCard: React.FC<ICardProps> = ({
+const TCard: React.FC<ICardProps> = ({
   noOfStars,
   message,
   imgSrc,
@@ -39,3 +39,4 @@ export const TCard: React.FC<ICardProps> = ({
     </div>
   );
 };
+export default TCard;
