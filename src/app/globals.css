@@ -31,3 +31,16 @@ ul li span{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.footer ul li {
+    font-size: 10px;
+    color:#303030;
+    font-weight: 300;
+}
+@media only screen and (min-width: 600px) {
+    .footer ul li {
+        font-size: 20px;
+        color:#303030;
+        font-weight: 300;
+
+    }
+}

@@ -5,3 +5,11 @@
     background-size: cover;
     background-position: center;
 }
+/* https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/multor/abbcf2d7-multor-heroshot_100000019g14200000001o.jpg */
+@media only screen and (max-width: 600px) {
+.container{
+    background-image: url("https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/multor/abbcf2d7-multor-heroshot_100000019g14200000001o.jpg");
+    background-size: cover;
+    background-position: center;
+}
+}

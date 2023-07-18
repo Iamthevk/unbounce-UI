@@ -20,7 +20,7 @@ function Header() {
             Schedule more virtual appointments, online classes, and video
             consultations with this high-converting lead capture template.
           </p>
-          <Button className="text-white py-2.5 px-6 bg-btn-secondary hover:bg-[rgba(246,146,30,0.9)] border-none">
+          <Button className="text-white py-2.5 px-6 bg-btn-secondary hover:bg-[rgba(246,146,30,0.9)] border-none hidden md:block">
             MAKE IT YOURS
           </Button>
         </div>
@@ -40,7 +40,7 @@ function Header() {
               );
             })}
           </p>
-          <div className="flex justify-around">
+          <div className="justify-around hidden md:flex">
             <p className="text-xs self-end ">DESKTOP VIEW </p>
             <Image
               src={`https://unbounce.com/wp-content/themes/unbounce2019/assets/img/lpt-preview-desktop-icon.png`}

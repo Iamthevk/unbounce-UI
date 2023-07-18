@@ -46,7 +46,7 @@ function Schedule() {
   };
 
   return (
-    <div className="relative lg:-bottom-5 left-16 bottom-20 w-[400px] ">
+    <div className="relative lg:-bottom-5 md:left-16 md:bottom-20 md:w-[400px] ">
       <form
         onSubmit={handleFormSubmit}
         className="lg:absolute lg:-top-32 bg-primary flex flex-col items-center gap-5 p-5 md:p-10 bg-[rgba(21,47,46,1)]"

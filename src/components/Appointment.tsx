@@ -23,7 +23,7 @@ function Appointment() {
             />
 
             <div className="mb-10">
-              <h1 className="text-7xl md:w-[600px] leading-[75px] text-[rgb(21, 47, 46)]  text-left describe">
+              <h1 className="text-2xl md:text-7xl md:w-[600px] md:leading-[75px] text-[rgb(21, 47, 46)]  text-left describe">
                 Describe the value of booking an appointment{" "}
               </h1>
             </div>
@@ -36,8 +36,8 @@ function Appointment() {
             </div>
           </div>
         </div>
-        <div className="h-[600px] flex md:w-[940px] mx-auto">
-          <div className="w-1/2 pt-36">
+        <div className=" md:h-[600px] md:flex md:w-[940px] mx-auto">
+          <div className="md:w-1/2 pt-10 md:pt-36">
             {BENEFITS_DATA.map((benefit, i) => {
               return (
                 <Benefit
@@ -50,7 +50,7 @@ function Appointment() {
               );
             })}
           </div>
-          <div className="w-1/2">
+          <div className=" md:w-1/2">
             <Schedule />
           </div>
         </div>
