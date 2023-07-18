@@ -51,3 +51,5 @@ export const FEATURES_DATA = [
   ];
 
   export const SOCIAL_ICONS = [twitter,linkedin,google, instagram,youtube ]
+
+  export const CATEGORIES = ["Agency Lead Generation","Counsulting","Ecourse","Events","Featured","Health","Landing Pages","Lead Generation","Medical","Webinar","WordPress"]

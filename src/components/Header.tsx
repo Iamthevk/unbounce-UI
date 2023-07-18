@@ -1,4 +1,5 @@
 import { Button } from "@/ui_components";
+import { CATEGORIES } from "@/utils/constant";
 import Image from "next/image";
 import React from "react";
 
@@ -26,92 +27,18 @@ function Header() {
         <div className="w-2/5 max-w-[317px] text-left">
           <h3 className="font-thin">Category</h3>
           <p className="anchor">
-            <a
-              href="https://unbounce.com/landing-page-templates/agency-lead-generation/"
-              target="_blank"
-            >
-              {" "}
-              Agency Lead Generation
-            </a>
-            <a
-              href="https://unbounce.com/landing-page-templates/consulting/"
-              target="_blank"
-            >
-              {" "}
-              Counsulting
-            </a>
-            |
-            <a
-              href="https://unbounce.com/landing-page-templates/ecourse/"
-              target="_blank"
-            >
-              {" "}
-              Ecourse
-            </a>
-            |
-            <a
-              href="https://unbounce.com/landing-page-templates/events/"
-              target="_blank"
-            >
-              {" "}
-              Events
-            </a>
-            |
-            <a
-              href="https://unbounce.com/landing-page-templates/featured/"
-              target="_blank"
-            >
-              {" "}
-              Featured
-            </a>
-            |
-            <a
-              href="https://unbounce.com/landing-page-templates/health/"
-              target="_blank"
-            >
-              {" "}
-              Health
-            </a>
-            |
-            <a
-              href="https://unbounce.com/landing-page-templates/landing-pages/"
-              target="_blank"
-            >
-              {" "}
-              Landing Pages
-            </a>
-            |
-            <a
-              href="https://unbounce.com/landing-page-templates/lead-generation/"
-              target="_blank"
-            >
-              {" "}
-              Lead Generation
-            </a>
-            |
-            <a
-              href="https://unbounce.com/landing-page-templates/medical/"
-              target="_blank"
-            >
-              {" "}
-              Medical
-            </a>
-            |
-            <a
-              href="https://unbounce.com/landing-page-templates/webinar/"
-              target="_blank"
-            >
-              {" "}
-              Webinar
-            </a>
-            |
-            <a
-              href="https://unbounce.com/landing-page-templates/wordpress/"
-              target="_blank"
-            >
-              {" "}
-              WordPress
-            </a>
+            {CATEGORIES.map((category, i) => {
+              return (
+                <a
+                  key={i}
+                  href="https://unbounce.com/landing-page-templates/agency-lead-generation/"
+                  target="_blank"
+                >
+                  {" "}
+                  {category} {i !== CATEGORIES.length - 1 ? "|" : ""}
+                </a>
+              );
+            })}
           </p>
           <div className="flex justify-around">
             <p className="text-xs self-end ">DESKTOP VIEW </p>
