@@ -4,6 +4,8 @@ import Image from "next/image";
 import Benefit from "@/ui_components/Benefit";
 import { benefits } from "../utils/constant";
 import Schedule from "./Schedule";
+import About from "./About";
+import Testimonial from "./Testimonial";
 function Appointment() {
   return (
     <div className="w-[88vw] mx-auto">
@@ -50,6 +52,8 @@ function Appointment() {
             <Schedule />
           </div>
         </div>
+        <About />
+        <Testimonial />
       </div>
     </div>
   );
