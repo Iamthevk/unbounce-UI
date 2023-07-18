@@ -1,3 +1,9 @@
+import google from "../../public/google.svg";
+import twitter from "../../public/twitter.svg";
+import linkedin from "../../public/linkedin.svg";
+import youtube from "../../public/youtube.svg";
+import instagram from "../../public/instagram.svg";
+
 export const BENEFITS_DATA = [
 
     {
@@ -43,3 +49,5 @@ export const FEATURES_DATA = [
         "Alternatively, you could use this section to address some frequently asked questions.",
     },
   ];
+
+  export const SOCIAL_ICONS = [twitter,linkedin,google, instagram,youtube ]
