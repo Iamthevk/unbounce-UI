@@ -1,6 +1,4 @@
-import Appointment from "@/components/Appointment";
-import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
+import { Appointment, Footer, Header, Navbar } from "@/components";
 
 export default function Home() {
   return (
@@ -8,6 +6,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <Appointment />
+      <Footer />
     </main>
   );
 }

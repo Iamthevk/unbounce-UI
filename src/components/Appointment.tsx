@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Appointment.module.css";
 import Image from "next/image";
-import Benefit from "@/ui_components/Benefit";
+import { Benefit } from "@/ui_components";
 import { BENEFITS_DATA, FEATURES_DATA } from "../utils/constant";
 import Schedule from "./Schedule";
 import About from "./About";
@@ -62,6 +62,15 @@ function Appointment() {
           })}
         </section>
         <Info />
+        <section className="flex justify-between text-xs md:text-base px-5 lg:px-40 items-center h-20 md:h-32 bg-[rgba(21,47,46,1)] text-gray-300">
+          <Image
+            src={"multor-light.svg"}
+            alt="multor-logo"
+            width={150}
+            height={100}
+          />
+          <p>{`© ${new Date().getFullYear()} All Rights Reserved`}</p>
+        </section>
       </div>
     </div>
   );
