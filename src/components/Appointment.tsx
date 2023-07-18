@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./Appointment.module.css";
 import Image from "next/image";
 import Benefit from "@/ui_components/Benefit";
-import { benefits } from "../utils/constant";
+import { BENEFITS_DATA, FEATURES_DATA } from "../utils/constant";
 import Schedule from "./Schedule";
 import About from "./About";
 import Testimonial from "./Testimonial";
+import Features from "@/ui_components/Features";
+import Info from "./Info";
 function Appointment() {
   return (
     <div className="w-[88vw] mx-auto">
@@ -36,7 +38,7 @@ function Appointment() {
         </div>
         <div className="h-[600px] flex md:w-[940px] mx-auto">
           <div className="w-1/2 pt-36">
-            {benefits.map((benefit, i) => {
+            {BENEFITS_DATA.map((benefit, i) => {
               return (
                 <Benefit
                   key={i}
@@ -54,6 +56,12 @@ function Appointment() {
         </div>
         <About />
         <Testimonial />
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 my-20 px-5 lg:px-40">
+          {FEATURES_DATA.map((feature, index) => {
+            return <Features key={index} {...feature} />;
+          })}
+        </section>
+        <Info />
       </div>
     </div>
   );
