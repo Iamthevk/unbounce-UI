@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./Appointment.module.css";
 import Image from "next/image";
 import Benefit from "@/ui_components/Benefit";
-import data from "../utils/benefitData";
+import { benefits } from "../utils/constant";
+import Schedule from "./Schedule";
 function Appointment() {
   return (
     <div className="w-[88vw] mx-auto">
@@ -17,8 +18,8 @@ function Appointment() {
               className="pb-16"
             />
 
-            <div className="">
-              <h1 className="text-7xl md:w-[500px] leading-[85px] text-[rgb(21, 47, 46)] tracking-tight text-left describe">
+            <div className="mb-10">
+              <h1 className="text-7xl md:w-[600px] leading-[75px] text-[rgb(21, 47, 46)]  text-left describe">
                 Describe the value of booking an appointment{" "}
               </h1>
             </div>
@@ -32,19 +33,22 @@ function Appointment() {
           </div>
         </div>
         <div className="h-[600px] flex md:w-[940px] mx-auto">
-          <div className="w-1/2">
-            {data.map((benefit, i) => {
+          <div className="w-1/2 pt-36">
+            {benefits.map((benefit, i) => {
               return (
                 <Benefit
                   key={i}
                   heading={benefit.heading}
-                  para={benefit.paragraph}
+                  paragraph={benefit.paragraph}
                   src={benefit.src}
+                  className="pb-10"
                 />
               );
             })}
           </div>
-          <div className="w-1/2"></div>
+          <div className="w-1/2">
+            <Schedule />
+          </div>
         </div>
       </div>
     </div>

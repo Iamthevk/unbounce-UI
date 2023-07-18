@@ -19,7 +19,8 @@ module.exports = {
       colors:{
         btn:{
           primary : "#03f",
-          secondary: "#f6921e"
+          secondary: "#f6921e",
+          schedule: "rgba(0,194,197,1)"
         }
       }
     },
