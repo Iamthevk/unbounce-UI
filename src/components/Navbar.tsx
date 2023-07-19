@@ -1,8 +1,33 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Button } from "@/ui_components";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [value, setValue] = useState("");
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (
+        searchInputRef.current &&
+        !searchInputRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+
+      document.addEventListener("click", handleOutsideClick);
+
+      return () => {
+        document.removeEventListener("click", handleOutsideClick);
+      };
+    };
+  }, []);
+
+  const handleSearchClick = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="border-b-2 w-full fixed z-10 bg-white ">
       <div className="w-10/12 mx-auto flex justify-around items-center h-10 py-10 ">
@@ -50,9 +75,22 @@ function Navbar() {
           <li>Contact</li>
         </ul>
         <div className="flex">
-          <button className="pr-2  ">
+          <button
+            className="pr-2 flex items-center  "
+            onClick={handleSearchClick}
+          >
             <Image src={"search.svg"} alt="search" width={25} height={25} />
           </button>
+          {isOpen && (
+            <input
+              type="text"
+              className={`hidden md:w-[70px] md:block rounded-full py-2 duration-300 focus:outline-none`}
+              placeholder="Search..."
+              ref={searchInputRef}
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+            />
+          )}
           <div className="hidden md:flex">
             <Button
               className={`text-btn-primary hover:bg-btn-primary  hover:text-white`}
@@ -67,6 +105,23 @@ function Navbar() {
           </div>
         </div>
       </div>
+      {isOpen && (
+        <div
+          className={`flex gap-2${
+            isOpen ? " opacity-100 w-10/12 px-5 mx-auto" : " opacity-0"
+          }`}
+        >
+          <Image src={"search.svg"} alt="search" width={25} height={25} />
+          <input
+            type="text"
+            className={` md:hidden rounded-full transition-all duration-1000 focus:outline-none`}
+            placeholder="Search..."
+            ref={searchInputRef}
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+          />
+        </div>
+      )}
     </div>
   );
 }

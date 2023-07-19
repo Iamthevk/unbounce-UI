@@ -29,13 +29,9 @@ function Header() {
           <p className="anchor">
             {CATEGORIES.map((category, i) => {
               return (
-                <a
-                  key={i}
-                  href="https://unbounce.com/landing-page-templates/agency-lead-generation/"
-                  target="_blank"
-                >
+                <a key={i} href={category.src} target="_blank">
                   {" "}
-                  {category} {i !== CATEGORIES.length - 1 ? "|" : ""}
+                  {category.name} {i !== CATEGORIES.length - 1 ? "|" : ""}
                 </a>
               );
             })}
