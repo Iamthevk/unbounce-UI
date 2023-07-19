@@ -107,14 +107,14 @@ function Navbar() {
       </div>
       {isOpen && (
         <div
-          className={`flex gap-2${
+          className={`flex md:hidden mb-3 gap-2${
             isOpen ? " opacity-100 w-10/12 px-5 mx-auto" : " opacity-0"
           }`}
         >
           <Image src={"search.svg"} alt="search" width={25} height={25} />
           <input
             type="text"
-            className={` md:hidden rounded-full transition-all duration-1000 focus:outline-none`}
+            className={`rounded-full transition-all duration-1000 focus:outline-none`}
             placeholder="Search..."
             ref={searchInputRef}
             value={value}

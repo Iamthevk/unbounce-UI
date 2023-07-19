@@ -1,9 +1,16 @@
+"use client";
 import { Button } from "@/ui_components";
+import Modal from "@/ui_components/Modal";
 import { CATEGORIES } from "@/utils/constant";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 function Header() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  function handleModal() {
+    setIsModalOpen(!isModalOpen);
+  }
   return (
     <header className="pb-5 w-11/12 mx-auto pt-24">
       <div className="my-10  mx-2.5 px-4 ">
@@ -20,7 +27,10 @@ function Header() {
             Schedule more virtual appointments, online classes, and video
             consultations with this high-converting lead capture template.
           </p>
-          <Button className="text-white py-2.5 px-6 bg-btn-secondary hover:bg-[rgba(246,146,30,0.9)] border-none hidden md:block">
+          <Button
+            className="text-white py-2.5 px-6 bg-btn-secondary hover:bg-[rgba(246,146,30,0.9)] border-none hidden md:block"
+            onClick={handleModal}
+          >
             MAKE IT YOURS
           </Button>
         </div>
@@ -56,6 +66,11 @@ function Header() {
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <div className="absolute top-24  left-1/3 ">
+          <Modal onClick={handleModal} />
+        </div>
+      )}
     </header>
   );
 }
