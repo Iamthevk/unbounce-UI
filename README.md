@@ -1,8 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Unbounce Clone Task
+
+An unbounce landing Page with form submission and responsive view for mobile screen
+
+## Features
+
+- Vite as the build tool
+- React for building user interfaces
+- TypeScript for static typing
+- Tailwind CSS
+- React-player for playing video on page
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository: `git clone https://github.com/Iamthevk/unbounce-task.git`
+
+2. Navigate to the project directory: `cd unbounce-task`
+
+3. Install dependencies: `yarn or yarn install`
+
+4. Run the development server:
 
 ```bash
 npm run dev
@@ -14,9 +30,21 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Check out the live demo of the app deployed on [Vercel](https://vercel.com) at [https://https://unbounce-template-multor.vercel.app/](https://unbounce-template-multor.vercel.app/).
+
+# screenshots of the webapp
+
+![image](https://github.com/Iamthevk/unbounce-task/blob/master/public/images/shot1.png)
+
+![image](https://github.com/Iamthevk/unbounce-task/blob/master/public/images/shot2.png)
+
+![image](https://github.com/Iamthevk/unbounce-task/blob/master/public/images/shot3.png)
+
+![image](https://github.com/Iamthevk/unbounce-task/blob/master/public/images/shot4.png)
+
+![image](https://github.com/Iamthevk/unbounce-task/blob/master/public/images/shot5.png)
 
 ## Learn More
 
