@@ -17,6 +17,14 @@ ul li{
     padding-right: 30px;
 }
 
+.mobile-menu{
+    padding-top: 50px;
+}
+.mobile-menu li {
+    
+    padding-bottom: 30px;
+}
+
 ul li span{
     padding-top: 3px;
 }
