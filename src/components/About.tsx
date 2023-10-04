@@ -3,7 +3,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 
 const About: React.FC = () => {
-  const videoURL = "https://www.youtube.com/watch?v=f-xNxJ9u9Ok";
+  const videoURL = "https://youtu.be/IiZTfbpmy7I";
   return (
     <section className="flex flex-col justify-start items-center relative px-5 pt-5 sm:pt-10 md:pt-20 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[700px] mb-[250px] sm:mb-[300px] md:mb-[350px] bg-[rgba(232,251,251,1)]">
       <div className="flex flex-col gap-10 text-center mt-10">
